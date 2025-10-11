@@ -8,19 +8,19 @@ function Portfolio() {
   const portfolio = [
     {
       id: 1,
-      img: "images/portfolio-1.png",
+      img: "/images/portfolio-1.png",
     },
     {
       id: 2,
-      img: "images/portfolio-2.png",
+      img: "/images/portfolio-2.png",
     },
     {
       id: 3,
-      img: "images/portfolio-2.png",
+      img: "/images/portfolio-2.png",
     },
     {
       id: 4,
-      img: "images/portfolio-2.png",
+      img: "/images/portfolio-2.png",
     },
   ];
 

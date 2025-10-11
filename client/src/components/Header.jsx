@@ -29,7 +29,7 @@ function Header() {
   return (
     <header className="container-me flex items-center justify-between">
       <div className="flex items-center gap-25 py-5">
-        <img src="images/logo.png" alt="" />
+        <img src="/images/logo.png" alt="" />
         <nav className="flex gap-7 text-[18px] text-gray-500 nav-media">
           {navData?.map((e, i) => (
             <Link

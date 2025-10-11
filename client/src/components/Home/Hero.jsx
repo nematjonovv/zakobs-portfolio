@@ -24,7 +24,7 @@ function Hero() {
           <div>
             <img
               className="object-contain pointer-events-none h-[720px] w-[635px] relative -translate-y-20 drop-shadow-[80px_0px_60px_rgba(221,248,234)] z-0"
-              src="images/designers-photo.png"
+              src="/images/designers-photo.png"
               alt=""
             />
 
