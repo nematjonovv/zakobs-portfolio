@@ -1,0 +1,170 @@
+.second-text {
+    display: none;
+}
+
+.post-parent:hover {
+    cursor: pointer;
+
+    .post-child {
+        transition: all .5s ease;
+        height: 225px;
+        width: 350px;
+    }
+
+    .gradient {
+        background: none;
+
+        div {
+            display: none;
+        }
+
+    }
+
+    .second-text {
+        display: block;
+        width: 350px;
+    }
+}
+
+.burger-menu-media {
+    display: none;
+}
+
+.burger-place-media {
+    display: none;
+}
+
+.burger-place-media.activee {
+    display: block;
+}
+
+// ### MEDIA QUERY ###
+
+// !HEADER MEDIA
+
+@media screen and (max-width:616px) {
+    header {
+        .burger-menu-media {
+            display: flex;
+        }
+
+        .nav-media {
+            display: none;
+        }
+
+
+        .burger-menu-media {
+            display: flex;
+        }
+
+
+    }
+}
+
+
+// !HERO & SERVICES MEDIA
+@media screen and (max-width: 1000px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero-media-parent {
+
+        .hero-media {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 0;
+        }
+    }
+
+    // services
+
+    .services-media {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+
+        li {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+}
+
+@media screen and (max-width:678px) {
+    .hero-media {
+        height: auto;
+        min-height: auto;
+        padding: 0;
+
+        .hero-text-media {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+// !PORTFOLIO MEDIA & CONTACT MEDIA
+@media screen and (max-width: 910px) {
+    .portfolio-media{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portfolio-link-media{
+        font-size: 18px;
+    }
+
+    .utils-header{
+        font-size: 26px;
+    }
+}
+
+// !CLIENT MEDIA
+@media screen and (max-width: 1100px) {
+    .clients-media{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    
+}
+
+// !TESTIMONIALS
+@media screen and (max-width: 830px) {
+    .testimonial-parent-media{
+        .testimonial-bg-media {
+            gap: 300px;
+        }
+        .testimonial-carousel-media {
+            height: 560px;
+            p{
+                color: #25202F;
+                font-size: 14px;
+            }
+        }
+    }
+}
+// !BLOG MEDIA
+@media screen and (max-width:1222px) {
+    .blog-parent-media{
+        flex-direction: column;
+        align-items: baseline;
+        height: auto;
+        .blog-blogs-media{
+            width: 100%;
+            flex-wrap: wrap;
+            height: auto;
+            justify-content: center;
+            gap: 100px;
+        }
+    }
+}
