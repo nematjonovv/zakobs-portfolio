@@ -9,7 +9,7 @@ function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      clientImg: "/testimonial-1.png",
+      clientImg: "images/testimonial-1.png",
       who: "Samantha Green",
       position: "Marketing Manager",
       testimonial:
@@ -17,7 +17,7 @@ function Testimonials() {
     },
     {
       id: 2,
-      clientImg: "/testimonial-1.png",
+      clientImg: "images/testimonial-1.png",
       who: "David Thompson",
       position: "Software Engineer",
       testimonial:
@@ -25,7 +25,7 @@ function Testimonials() {
     },
     {
       id: 3,
-      clientImg: "/testimonial-1.png",
+      clientImg: "images/testimonial-1.png",
       who: "Emily Carter",
       position: "Creative Director",
       testimonial:
@@ -33,7 +33,7 @@ function Testimonials() {
     },
     {
       id: 4,
-      clientImg: "/testimonial-1.png",
+      clientImg: "images/testimonial-1.png",
       who: "Michael Rodriguez",
       position: "Business Owner",
       testimonial:
@@ -41,7 +41,7 @@ function Testimonials() {
     },
     {
       id: 5,
-      clientImg: "/testimonial-1.png",
+      clientImg: "images/testimonial-1.png",
       who: "Olivia Bennett",
       position: "Front-end Developer",
       testimonial:
@@ -61,24 +61,24 @@ function Testimonials() {
             <div className="w-full flex justify-between items-center">
               <img
                 draggable="false"
-                src="/testimonial-2.png"
+                src="images/testimonial-2.png"
                 alt=""
               />
               <img
                 draggable="false"
-                src="/testimonial-3.png"
+                src="images/testimonial-3.png"
                 alt=""
               />
             </div>
             <div className="w-[80%] flex justify-between items-center mx-auto">
               <img
                 draggable="false"
-                src="/testimonial-4.png"
+                src="images/testimonial-4.png"
                 alt=""
               />
               <img
                 draggable="false"
-                src="/testimonial-5.png"
+                src="images/testimonial-5.png"
                 alt=""
               />
             </div>
@@ -94,7 +94,7 @@ function Testimonials() {
               {testimonials?.map((e, i) => (
                 <SwiperSlide key={i} className="!flex items-center justify-center ">
                   <div className="w-[600px]  flex flex-col items-center justify-center h-auto">
-                    <img src="/quote-icon.png" alt="" />
+                    <img src="images/quote-icon.png" alt="" />
                     <p className="text-center mt-10 mb-[80px] max-h-20  text-[16px] text-[#636066] leading-[32px]">
                       {e.testimonial}
                     </p>

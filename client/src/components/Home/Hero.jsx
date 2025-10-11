@@ -24,7 +24,7 @@ function Hero() {
           <div>
             <img
               className="object-contain pointer-events-none h-[720px] w-[635px] relative -translate-y-20 drop-shadow-[80px_0px_60px_rgba(221,248,234)] z-0"
-              src="../../../public/images/designers-photo.png"
+              src="images/designers-photo.png"
               alt=""
             />
 
@@ -32,37 +32,37 @@ function Hero() {
             <div className="absolute inset-0 pointer-events-none">
               <img
                 className="absolute -right-40 top-40 "
-                src="../../../public/images/dots-decor.png"
+                src="/images/dots-decor.png"
                 alt=""
               />
               <img
                 className="absolute right-0 top-[30%]"
-                src="../../../public/images/greendot-decor.png"
+                src="/images/greendot-decor.png"
                 alt=""
               />
               <img
                 className="absolute right-[50%] top-10"
-                src="../../../public/images/purpledot-decor.png"
+                src="/images/purpledot-decor.png"
                 alt=""
               />
               <img
                 className="absolute -right-32 top-[40%]"
-                src="../../../public/images/x-decor.png"
+                src="/images/x-decor.png"
                 alt=""
               />
               <img
                 className="absolute top-30 right-0"
-                src="../../../public/images/snakeline-decor.png"
+                src="/images/snakeline-decor.png"
                 alt=""
               />
               <img
                 className="absolute top-100 -right-8"
-                src="../../../public/images/snakeline-decor.png"
+                src="/images/snakeline-decor.png"
                 alt=""
               />
               <img
                 className="absolute top-100 right-155"
-                src="../../../public/images/snakeline-decor.png"
+                src="/images/snakeline-decor.png"
                 alt=""
               />
             </div>

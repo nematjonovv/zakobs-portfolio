@@ -5,32 +5,32 @@ function Clients() {
   const clients = [
     {
       id: 1,
-      img: "client-slack.png",
+      img: "images/client-slack.png",
       client: "slack",
       bgCol: "#FFE7F0",
     },
     {
       id: 2,
-      img: "client-medium.png",
+      img: "images/client-medium.png",
       client: "medium",
       bgCol: "#CAFFE1",
     },
     {
       id: 3,
-      img: "client-microsoft.png",
+      img: "images/client-microsoft.png",
       client: "microsfot",
       bgCol: "#DDF5FF",
     },
 
     {
       id: 4,
-      img: "client-zeplin.png",
+      img: "images/client-zeplin.png",
       client: "zeplin",
       bgCol: "#FFEEC9",
     },
     {
       id: 5,
-      img: "client-shopify.png",
+      img: "images/client-shopify.png",
       client: "shopify",
       bgCol: "#DBFFC3",
     },
