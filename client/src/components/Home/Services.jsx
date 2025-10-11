@@ -8,19 +8,19 @@ function Services() {
       id: 1,
       title: `UX Research`,
       desc: `New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future.`,
-      img: "../../../public/images/services-ui.png",
+      img: "/services-ui.png",
     },
     {
       id: 2,
       title: `Brand Design`,
       desc: `New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future.`,
-      img: "../../../public/images/services-brand.png",
+      img: "/services-brand.png",
     },
     {
       id: 3,
       title: `Web Development`,
       desc: `New demos are continually added and buying a single license for Mak gives you access to all of what's shown below, plus everything that will be added in the future.`,
-      img: "../../../public/images/services-web.png",
+      img: "/services-web.png",
     },
   ];
   return (

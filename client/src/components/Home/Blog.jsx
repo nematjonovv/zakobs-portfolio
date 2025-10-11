@@ -6,7 +6,7 @@ function Blog() {
   const blogPosts = [
     {
       id: 1,
-      img: "/public/images/blog-1.png",
+      img: "/blog-1.png",
       date: { day: 20, month: "June", year: 2025 },
       title: "Technology is evolving rapidly. New devices and applications.",
       fullPost:
@@ -15,7 +15,7 @@ function Blog() {
     },
     {
       id: 2,
-      img: "/public/images/blog-2.png",
+      img: "/blog-2.png",
       date: { day: 5, month: "July", year: 2025 },
       title: "Artificial Intelligence: Shaping the Future of Innovation.",
       fullPost:
@@ -24,7 +24,7 @@ function Blog() {
     },
     {
       id: 3,
-      img: "/public/images/blog-3.png",
+      img: "/blog-3.png",
       date: { day: 15, month: "August", year: 2025 },
       title: "The Rise of Smart Living: Technology in Everyday Life.",
       fullPost:
