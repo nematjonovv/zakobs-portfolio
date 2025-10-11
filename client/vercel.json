@@ -1,8 +1,5 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
-git add .
-git commit -m "fix vercel rewrite config"
-git push
