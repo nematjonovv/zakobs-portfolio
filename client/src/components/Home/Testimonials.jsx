@@ -1,6 +1,5 @@
 import Header3 from "../../utils/Header3";
 import Title from "../../utils/Title";
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -85,33 +84,33 @@ function Testimonials() {
           </div>
 
           {/* testimonial carousel */}
-          <div className="relative z-10 h-120 testimonial-carousel-media">
-            <Swiper
-              pagination={{ clickable: true }}
-              modules={[Pagination]}
-              className="mySwiper"
-            >
-              {testimonials?.map((e, i) => (
-                <SwiperSlide key={i} className="!flex items-center justify-center ">
-                  <div className="w-[600px]  flex flex-col items-center justify-center h-auto">
-                    <img src="/images/quote-icon.png" alt="" />
-                    <p className="text-center mt-10 mb-[80px] max-h-20  text-[16px] text-[#636066] leading-[32px]">
-                      {e.testimonial}
-                    </p>
-                    <div className="flex flex-col items-center mb-10">
-                      <img src={e.clientImg} alt="" />
-                      <h5 className="mt-5 mb-1 text-[20px] text-black font-medium">
-                        {e.who}
-                      </h5>
-                      <span className="font-normal text-[16px] text-black">
-                        {e.position}
-                      </span>
+            <div className="relative z-10 h-120 testimonial-carousel-media">
+              <Swiper
+                pagination={{ clickable: true }}
+                modules={[Pagination]}
+                className="mySwiper"
+              >
+                {testimonials?.map((e, i) => (
+                  <SwiperSlide key={i} className="!flex items-center justify-center ">
+                    <div className="w-[600px]  flex flex-col items-center justify-center h-auto">
+                      <img src="/images/quote-icon.png" alt="" />
+                      <p className="text-center mt-10 mb-[80px] max-h-20  text-[16px] text-[#636066] leading-[32px]">
+                        {e.testimonial}
+                      </p>
+                      <div className="flex flex-col items-center mb-10">
+                        <img src={e.clientImg} alt="" />
+                        <h5 className="mt-5 mb-1 text-[20px] text-black font-medium">
+                          {e.who}
+                        </h5>
+                        <span className="font-normal text-[16px] text-black">
+                          {e.position}
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
         </div>
       </div>
     </div>

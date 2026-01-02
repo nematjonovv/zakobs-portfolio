@@ -1,32 +1,33 @@
-const { DataTypes, Model } = require("sequelize");
-const sequelize = require("../config/db");
+const sequelize = require('../config/db')
+const {DataTypes, Model} = require('sequelize')
 
 class Services extends Model {}
 
 Services.init(
-  {
-    title: {
-      type: DataTypes.STRING(50),
-      allowNull: false,
-      validate: { notEmpty: true },
+    {
+        title:{
+            type:DataTypes.STRING(20),
+            allowNull:false,
+            validate: {notEmpty: {msg: "This field is required"}, len: [1, 20]}
+        },
+        description:{
+            type: DataTypes.TEXT(),
+            allowNull:false,
+            validate:{notEmpty: {msg: "This field is required"}, len: [1, 245]},
+        },
+        icon:{
+            type:DataTypes.STRING,
+            allowNull: false,
+            validate: {notEmpty: {msg: "This field is required"}}
+        }
     },
-    serviceDesc: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-      validate: { notEmpty: true },
-    },
-    icon: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: { notEmpty: true },
-    },
-  },
-  {
-    sequelize,
-    modelName: "Services",
-    tableName: "services",
-    timestamps:false
-  }
-);
+    {
+        sequelize,
+        modelName: "services",
+        tableName:"services",
+        timestamps: true
+    }
+)
 
-module.export = Services
+
+module.exports = Services
