@@ -2,7 +2,7 @@ const app = require("../index");
 const sequelize = require('../config/db');
 const Users = require("../models/users.model");
 const { where } = require("sequelize");
-const PORT = process.env.PORT || 7070;
+const PORT = process.env.PORT || 6000;
 const bcrypt = require("bcryptjs")
 
 sequelize.authenticate()
