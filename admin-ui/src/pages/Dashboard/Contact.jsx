@@ -17,10 +17,10 @@ function Contact() {
   useEffect(() => {
     if (contact && Object.keys(contact).length) {
       setContactObj({
-        instagram: contact.data[0].instagram || "",
-        dribble: contact.data[0].dribble || "",
-        linkedin: contact.data[0].linkedin || "",
-        email: contact.data[0].email || "",
+        instagram: contact?.data[0]?.instagram || "",
+        dribble: contact?.data[0]?.dribble || "",
+        linkedin: contact?.data[0]?.linkedin || "",
+        email: contact?.data[0]?.email || "",
       });
     }
   }, [contact]);
@@ -141,7 +141,7 @@ function Contact() {
             className="rounded-xl bg-[#8643DC] cursor-pointer px-5 py-2 text-sm font-medium text-white"
             onClick={() => {
               const payload = {};
-              
+
               if (contact?.data[0]?.id) {
                 handleUpdate({
                   id: contact.data[0].id,
