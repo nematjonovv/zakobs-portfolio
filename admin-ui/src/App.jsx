@@ -9,6 +9,7 @@ import Testimonials from "./pages/Dashboard/Testimonials";
 import Blog from "./pages/Dashboard/Blog";
 import Requests from "./pages/Dashboard/Requests";
 import Contact from "./pages/Dashboard/Contact";
+import Settings from "./pages/Dashboard/Settings";
 
 function App() {
   return (
@@ -17,7 +18,6 @@ function App() {
         <Route path="/" element={<Navigate to={"/login"} replace />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />}>
-        
           <Route index element={<Navigate to="overview" replace />} />
 
           <Route path="overview" element={<Overview />} />
@@ -28,6 +28,7 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="requests" element={<Requests />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="settings" element={<Settings />} />
         </Route>
       </Routes>
     </div>
