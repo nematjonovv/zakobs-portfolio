@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 
 function Sidebar() {
   const routeLinks = [
@@ -13,6 +14,8 @@ function Sidebar() {
     { name: "Settings", path: "settings" },
   ];
 
+  const { logout } = useAuth();
+
   return (
     <div className="glassmorphism min-h-screen h-full w-sm border-r border-[#c17aff] rounded-lg py-5 px-3 flex flex-col">
       <div className="flex items-center">
@@ -26,14 +29,21 @@ function Sidebar() {
           {routeLinks?.map((e, i) => (
             <NavLink
               key={i}
-              className={({ isActive }) => isActive ? "sidebar-items active active:scale-99" : "sidebar-items active:scale-99"}
+              className={({ isActive }) =>
+                isActive
+                  ? "sidebar-items active active:scale-99"
+                  : "sidebar-items active:scale-99"
+              }
               to={`/dashboard/${e.path}`}
             >
               {e.name}
             </NavLink>
           ))}
         </div>
-        <button className="px-4 rounded-md py-2 mb-1 text-lg flex items-center text-[#1E3050] cursor-pointer">
+        <button
+          className="px-4 rounded-md py-2 mb-1 text-lg flex items-center text-[#1E3050] cursor-pointer"
+          onClick={() => logout()}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -55,4 +65,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;           
+export default Sidebar;

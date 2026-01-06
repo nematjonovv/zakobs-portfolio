@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import ErrorMessage from "../utils/Messages/ErrorMessage";
+import { useAuth } from "../Context/AuthContext";
 
 function Login() {
   const API = import.meta.env.VITE_API_URL;
@@ -11,6 +12,7 @@ function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const [errorObj, setErrorObj] = useState(null);
+  const { login } = useAuth();
   const loginSubmit = async () => {
     try {
       const res = await axios.post(`${API}/auth/login`, {
@@ -19,18 +21,19 @@ function Login() {
       });
 
       const token = res.data.token;
-      if (!token) { 
+      if (!token) {
         return;
       }
+
+      login(token);
 
       localStorage.setItem("access_token", token);
       navigate("/dashboard");
     } catch (error) {
       setErrorObj({
         key: Math.random(),
-        text: error.response.data.message
-      })
-
+        text: error.response.data.message,
+      });
     }
   };
 
@@ -53,7 +56,7 @@ function Login() {
               alt=""
               draggable="false"
             />
-            Zakob's Potfolio 
+            Zakob's Potfolio
           </h1>
           <span className="text-sm text-gray-500">Control Panel</span>
         </div>
