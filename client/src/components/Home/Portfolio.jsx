@@ -42,7 +42,7 @@ function Portfolio() {
           </div>
 
           <div className="grid grid-cols-5 grid-rows-5 gap-3 auto-rows-[150px]">
-            {projects.slice(0, 6).map((project, index) => (
+            {projects?.slice(0, 6).map((project, index) => (
               <div
                 key={project.id || index}
                 className={`bg-gray-300 ${
