@@ -1,3 +1,4 @@
+require("dotenv").config();
 const cors = require("cors");
 const express = require("express");
 const app = express();
@@ -15,7 +16,22 @@ const swaggerOptions = {
       version: "1.0.0",
       description: "Zakob-Portfolio's server",
     },
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT",
+        },
+      },
+    },
+    security: [
+      {
+        bearerAuth: [], // global token talab qilinadigan endpointlar uchun
+      },
+    ],
   },
+
   apis: ["./routes/*.js"],
 };
 
@@ -45,4 +61,6 @@ app.use("/", require("./routes/blog.route"));
 app.use("/", require("./routes/requests.route"));
 // contact route
 app.use("/", require("./routes/contact.route"));
+// user route
+app.use("/", require("./routes/user.route"));
 module.exports = app;
