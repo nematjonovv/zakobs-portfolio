@@ -2,6 +2,16 @@ require("dotenv").config();
 const cors = require("cors");
 const express = require("express");
 const app = express();
+app.use((req, res, next) => {
+  res.setHeader(
+    "Cache-Control",
+    "no-store, no-cache, must-revalidate, proxy-revalidate"
+  );
+  res.setHeader("Pragma", "no-cache");
+  res.setHeader("Expires", "0");
+  next();
+});
+
 app.use(cors());
 app.use(express.json());
 const swaggerUi = require("swagger-ui-express");
