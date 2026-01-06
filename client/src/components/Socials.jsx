@@ -25,7 +25,10 @@ function Socials() {
       </p>
       <div className="flex gap-10">
         {socials?.map((e, i) => (
-          <div className="bg-[url('/images/social-bg.png')] bg-contain bg-no-repeat w-[50px] h-[50px] flex justify-center items-center text-[24px] text-white">
+          <div
+            key={i}
+            className="bg-[url('/images/social-bg.png')] bg-contain bg-no-repeat w-[50px] h-[50px] flex justify-center items-center text-[24px] text-white"
+          >
             <a href={e.socialLink} className={e.icon} target="_blank"></a>
           </div>
         ))}

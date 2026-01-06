@@ -41,7 +41,7 @@ function Blog() {
         </div>
         <div className="h-full flex-1 flex justify-between blog-blogs-media">
           {blogPosts.slice(0,3)?.map((post, i) => (
-            <div className="post-parent">
+            <div className="post-parent" key={i}>
               <div className="w-[255px] h-[350px] relative post-child">
                 <img
                   className="w-full h-full object-cover"
