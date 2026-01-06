@@ -2,6 +2,7 @@ require("dotenv").config();
 const cors = require("cors");
 const express = require("express");
 const app = express();
+app.set("etag", false);
 app.use((req, res, next) => {
   res.setHeader(
     "Cache-Control",
